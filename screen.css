@@ -7,10 +7,7 @@
 html, body {
 	font: normal 14px/19px "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 	color:  #333333;
-	background-color: #373735;
-}
-body {
-	background: #373735 url('lime.png') no-repeat right bottom;
+	background: #373735 url('background-gradient.png') repeat-x top;
 }
 
 a {
@@ -27,14 +24,15 @@ header {
 	margin: 2em 0 1em;
 }
 header h1 {
-	margin: 0 140px;
+	margin: 0 140px .5em 140px;
 	text-align: center;
 }
 header h1 a {
-	letter-spacing: 5px;
-	font-size: 3em;
-	font-family: 'Walter Turncoat', cursive;
-	color: #CEE00B;
+	display: block;
+	text-indent: -10000px;
+	background: transparent url('logo.png') no-repeat center top;
+	width: 497px;
+	height: 33px;
 }
 
 article.post {
