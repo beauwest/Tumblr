@@ -1,0 +1,95 @@
+/*
+	Beau West: Dark side of a lime
+	Base Site Styles
+	Copyright 2011: beau@west.gs
+*/
+
+html, body {
+	font: normal 14px/19px "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	color:  #333333;
+	background-color: #373735;
+}
+body {
+	background: #373735 url('lime.png') no-repeat right bottom;
+}
+
+a {
+	text-decoration: none;
+}
+
+div#envelope {
+	width: 780px;
+	margin: 0 auto;
+	
+}
+
+header {
+	margin: 2em 0 1em;
+}
+header h1 {
+	margin: 0 140px;
+	text-align: center;
+}
+header h1 a {
+	letter-spacing: 5px;
+	font-size: 3em;
+	font-family: 'Walter Turncoat', cursive;
+	color: #CEE00B;
+}
+
+article.post {
+	margin-bottom: 2em;
+	width: 640px;
+	display: block;
+}
+article section.meta {
+	width: 122px;
+	margin-right: 16px;
+	text-align: right;
+	float: left;
+}
+article section.content {
+	width 502px;
+	background-color: #FFFFFF;
+	display: block;
+	margin-left: 138px;
+	border: 1px solid #5e5e5b;
+	box-shadow: 0px 2px 4px #51514e;
+	-moz-box-shadow: 0px 2px 4px #51514e;
+	-webkit-box-shadow: 0px 2px 4px #51514e;
+}
+
+article section.meta {
+	text-transform: uppercase;
+	font-size: .7em;
+	line-height: 1.3em;
+}
+article section.meta span.icon {
+	margin-right: .5em;
+}
+article section.meta span.icon img {
+	width:  10px;
+	height:  10px;
+}
+article section.meta a.permalink {
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	color: #cee00b;
+}
+article section.meta a.permalink:hover {
+	color: #f0fa8a;
+}
+
+article section.meta ul.tags {
+	list-style-type: none;
+	margin: 1em 0 0 0;
+}
+
+article section.meta ul.tags a {
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	color: #5e5e5b;
+}
+article section.meta ul.tags a:hover {
+	color: #999999;
+}
