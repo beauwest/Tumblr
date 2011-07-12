@@ -15,12 +15,6 @@ article.post blockquote {
 	font-style: italic;
 	border-left: 2px solid #DDD;
 }
-article.post section.content a {
-	color: #8e9f00;
-}
-article.post section.content a:hover {
-	text-decoration: underline;
-}
 
 /* Text */
 article.text div.body {
@@ -36,6 +30,12 @@ article.text h2 {
 }
 article.text p {
 	margin-bottom: 1.3em;
+}
+article.text div.body a {
+	color: #8e9f00;
+}
+article.text div.body a:hover {
+	text-decoration: underline;
 }
 
 /* Photo */
