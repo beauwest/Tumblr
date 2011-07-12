@@ -138,3 +138,23 @@ article section.meta ul.tags a {
 article section.meta ul.tags a:hover {
 	color: #999999;
 }
+
+footer {
+	margin: 0 140px 5em 140px;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+footer a {
+	-webkit-transition: all .4s linear;
+	-moz-transition: all .4s linear;
+	color: #8f8f8a;
+}
+footer a:hover {
+	color: #e6e6e5;
+}
+footer a.nextpage {
+	float: left;
+}
+footer a.previouspage {
+	float:  right;
+}

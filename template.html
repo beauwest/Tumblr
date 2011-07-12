@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>{Title}</title>
+		<meta charset="utf-8">
+		<meta name="robots" content="index,follow">
+		<meta name="author" content="Beau West">
+		<link rel="alternate" type="application/rss+xml" href="{RSS}">
+		{block:Description}<meta name="description" content="{MetaDescription}">{/block:Description}
+		<link rel="stylesheet" href="base.css" type="text/css" media="screen" title="Screen">
+	</head>
+	
+	<body id="west-gs" class="tumblr">
+		<div id="envelope">
+			<header>
+				<section id="twitter">
+					
+				</section>
+				<h1><a href="/" title="{Title}">{Title}</a></h1>
+			</header>
+			
+			{block:Posts}
+			<article class="post {PostType}">
+				<section class="meta">
+					<a href="{Permalink}" class="permalink">
+						<span class="icon"><img src="icons/{PostType}.png"></span>
+						{block:Date}<span class="date">{DayOfMonth} {ShortMonth}</span>{/block:Date}{block:NoteCount}<br><span class="likes">&hearts;</span> <span>{NoteCount}</span>{/block:NoteCount}
+					</a>
+					{block:HasTags}
+					<ul class="tags">
+						{block:Tags}
+							<li><a href="{TagURL}">#{Tag}</a></li>
+						{/block:Tags}
+						</ul>
+					{/block:HasTags}
+				</section>
+				<section class="content">
+			
+			
+			{block:Text}
+			<!-- Text article -->
+					{block:Title}<h2>{Title}</h2>{/block:Title}
+					<div class="body">{Body}</div>
+			<!-- End text article -->
+			{/block:Text}
+			
+			<!-- Photo article -->
+					<div class="photo">
+						<a href="{LinkURL}"><img src="{PhotoURL-500}" alt="{PhotoAlt}"></a>
+					</div>
+					{block:Caption}
+					<div class="caption">{Caption}</div>
+					{/block:Caption}
+			<!-- End photo article -->
+			
+			<!-- Quote article -->
+					<blockquote>
+						<span class="quote">&#147;</span>{Quote}<span class="quote">&#148;</span>
+					</blockquote>
+					{block:Source}
+					<div class="source">
+						<p>&mdash; {Source}</p>
+					</div>
+					{/block:Source}
+			<!-- End quote article -->
+			
+			<!-- Link article -->
+					<div class="link">
+						<a href="{URL}" title="{Name}">{Name}</a>
+					</div>
+					{block:Description}
+					<div class="description">{Description}</div>
+					{/block:Description}
+			<!-- End link article -->
+			
+			<!-- Chat article -->
+					{block:Title}
+					<h2>{Title}</h2>
+					{/block:Title}
+					<ul class="chat">
+						{block:Lines}
+						<li class="{Alt}"><span class="label person_{UserNumber}">{Name}</span>: {Line}</li>
+						{/block:Lines}
+					</ul>
+			<!-- End chat article -->
+			
+			<!-- Video article -->
+					<div class="video">{Video-500}</div>
+					{block:Caption}
+					<div class="caption">{Caption}</div>
+					{/block:Caption}
+			<!-- End video article -->
+				
+				</section>
+			</article>
+			{/block:Posts}
+			
+			<footer>
+			{block:NextPage}
+				<a href="{NextPage}" class="nextpage">&#171; Older</a>
+			{/block:NextPage}
+			{block:PreviousPage}
+				<a href="{PreviousPage}" class="previouspage">Newer &#187;</a>
+			{/block:PreviousPage}
+			</footer>
+		</div>
+	</body>
+</html>
