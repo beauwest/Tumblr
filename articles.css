@@ -1,10 +1,28 @@
+/* General Article Styles */
+article.post ul, article.post ol {
+	margin: 0 0 1.3em 2.5em;
+}
+article.post ul {
+	list-style: disc inside;
+}
+article.post ol {
+	list-style: decimal inside;
+}
+article.post blockquote {
+	margin: 0 0 1.3em 1em;
+	padding-left: 1em;
+	color:  #777777;
+	font-style: italic;
+	border-left: 2px solid #DDD;
+}
+
 /* Text */
 article.text div.body {
 	padding: 0 15px;
 }
 article.text h2 {
 	padding: 8px 15px;
-	background-color: #F5F5F5;
+	background-color: #EDEDED;
 	color: #555555;
 	font-size: 1.1em;
 	font-weight: bold;
@@ -20,19 +38,137 @@ article.photo div.photo {
 	margin-bottom: -4px;
 }
 article.photo p:first-child {
-	padding: 8px 15px;
+	margin: 0;
+	padding: 8px 15px !important;
 	font-size: 1.1em;
-	font-weight: bold;
-	background-color: #eaedcd;
-	margin-bottom: 1em;
+	color: #888888;
+	background-color: #EAEDCD;
+}
+article.photo p:first-child strong {
+	color: #555555;
+}
+article.photo p:first-child a {
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	color: #777777;
+	text-decoration: underline;
+}
+article.photo p:first-child a:hover {
+	color: #444444;
+}
+article.photo p:last-child {
+	padding-bottom: 1.3em;
 }
 article.photo p {
-	padding:  0 15px;
-	margin-bottom: 1.3em;
+	padding: 1.3em 15px 0 15px;
 }
 
 /* Quote */
+article.quote blockquote {
+	padding: 15px;
+	font-size: 1.2em;
+	font-style: italic;
+	margin: 0;
+	color: #333333;
+	border-left: none;
+}
+article.quote blockquote span.quote {
+	color: #999999;
+}
+article.quote div.source {
+	padding: 8px 15px;
+	background-color: #EDEDED;
+	color: #555555;
+	text-align: right;
+}
+
+/* Link */
+article.link div.body {
+	padding: 0 15px;
+}
+article.link div.link {
+	padding: 8px 15px;
+	background-color: #E1ECED;
+	color: #555555;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+article.link div.link a {
+	-webkit-transition: color .2s linear;
+	-moz-transition: color .2s linear;
+	text-decoration: underline;
+	color: #4070ac;
+}
+article.link div.link a:hover {
+	text-decoration: underline;
+	color: #001c40;
+}
+article.link div.description {
+	padding: 0 15px;
+}
+article.link p {
+	margin-bottom: 1.3em;
+}
 
 /* Chat */
+article.chat h2 {
+	padding: 8px 15px;
+	background-color: #EDE1E1;
+	color: #801414;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-bottom: .5em;
+}
+article.chat ul.chat {
+	margin: 0;
+	list-style: none;
+}
+article.chat ul.chat li {
+	border-bottom:  1px solid #E6E6E6;
+	margin: 0 1em;
+	padding: .5em 0;
+}
+article.chat ul.chat span.label {
+	font-weight: bold;
+}
+article.chat ul.chat span.person_1 {
+	color: #961717;
+}
+article.chat ul.chat span.person_2 {
+	color: #176096;
+}
+article.chat ul.chat span.person_3 {
+	color: #899617;
+}
 
 /* Video */
+article.video div.video {
+	background-color: #EAEDCD;
+	margin-bottom: -4px;
+}
+article.video p:first-child {
+	margin: 0;
+	padding: 8px 15px !important;
+	font-size: 1.1em;
+	color: #888888;
+	background-color: #EAEDCD;
+}
+article.video p:first-child strong {
+	color: #555555;
+}
+article.video p:first-child a {
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	color: #777777;
+	text-decoration: underline;
+}
+article.video p:first-child a:hover {
+	color: #444444;
+}
+article.video p:last-child {
+	padding-bottom: 1.3em;
+}
+article.video p {
+	padding: 1.3em 15px 0 15px;
+}

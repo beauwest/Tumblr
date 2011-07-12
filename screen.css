@@ -46,7 +46,7 @@ table {
 */
 
 html, body {
-	font: normal 14px/19px "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	font: normal 14px/17px "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 	color:  #333333;
 	background: #373735 url('background-gradient.png') repeat-x top;
 }
