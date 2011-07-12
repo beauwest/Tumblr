@@ -43,6 +43,7 @@ article.text p {
 }
 article.text div.body a {
 	color: #8e9f00;
+	text-decoration: none;
 }
 article.text div.body a:hover {
 	text-decoration: underline;
