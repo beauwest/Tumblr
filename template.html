@@ -7,7 +7,7 @@
 		<meta name="author" content="Beau West">
 		<link rel="alternate" type="application/rss+xml" href="{RSS}">
 		{block:Description}<meta name="description" content="{MetaDescription}">{/block:Description}
-		<link rel="stylesheet" href="base.css" type="text/css" media="screen" title="Screen">
+		<link rel="stylesheet" href="http://static.beaudesigns.net/tumblr/darklime/base.css" type="text/css" media="screen" title="Screen">
 	</head>
 	
 	<body id="west-gs" class="tumblr">
@@ -23,7 +23,7 @@
 			<article class="post {PostType}">
 				<section class="meta">
 					<a href="{Permalink}" class="permalink">
-						<span class="icon"><img src="icons/{PostType}.png"></span>
+						<span class="icon"><img src="http://static.beaudesigns.net/tumblr/darklime/icons/{PostType}.png"></span>
 						{block:Date}<span class="date">{DayOfMonth} {ShortMonth}</span>{/block:Date}{block:NoteCount}<br><span class="likes">&hearts;</span> <span>{NoteCount}</span>{/block:NoteCount}
 					</a>
 					{block:HasTags}
@@ -44,6 +44,7 @@
 			<!-- End text article -->
 			{/block:Text}
 			
+			{block:Photo}
 			<!-- Photo article -->
 					<div class="photo">
 						<a href="{LinkURL}"><img src="{PhotoURL-500}" alt="{PhotoAlt}"></a>
@@ -52,7 +53,9 @@
 					<div class="caption">{Caption}</div>
 					{/block:Caption}
 			<!-- End photo article -->
+			{/block:Photo}
 			
+			{block:Quote}
 			<!-- Quote article -->
 					<blockquote>
 						<span class="quote">&#147;</span>{Quote}<span class="quote">&#148;</span>
@@ -63,7 +66,9 @@
 					</div>
 					{/block:Source}
 			<!-- End quote article -->
+			{/block:Quote}
 			
+			{block:Link}
 			<!-- Link article -->
 					<div class="link">
 						<a href="{URL}" title="{Name}">{Name}</a>
@@ -72,7 +77,9 @@
 					<div class="description">{Description}</div>
 					{/block:Description}
 			<!-- End link article -->
+			{/block:Link}
 			
+			{block:Chat}
 			<!-- Chat article -->
 					{block:Title}
 					<h2>{Title}</h2>
@@ -83,13 +90,25 @@
 						{/block:Lines}
 					</ul>
 			<!-- End chat article -->
+			{/block:Chat}
 			
+			{block:Audio}
+			<!-- Audio article -->
+					{block:Caption}
+					<h2>{Caption}</h2>
+					{/block:Caption}
+					<div class="audio">{AudioPlayerBlack}</div>
+			<!-- End audio article -->
+			{/block:Audio}
+			
+			{block:Video}
 			<!-- Video article -->
 					<div class="video">{Video-500}</div>
 					{block:Caption}
 					<div class="caption">{Caption}</div>
 					{/block:Caption}
 			<!-- End video article -->
+			{/block:Video}
 				
 				</section>
 			</article>
