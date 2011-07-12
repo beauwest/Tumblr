@@ -1,3 +1,44 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	/* Added by Beau West for legibility. */
+	text-rendering: optimizeLegibility;
+	font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 /*
 	Beau West: Dark side of a lime
 	Base Site Styles
@@ -13,11 +54,17 @@ html, body {
 a {
 	text-decoration: none;
 }
+strong {
+	font-weight: bold;
+}
+em {
+	font-style: italic;
+}
 
 div#envelope {
 	width: 780px;
 	margin: 0 auto;
-	
+	padding-top: 2em;
 }
 
 header {
@@ -51,10 +98,10 @@ article section.content {
 	background-color: #FFFFFF;
 	display: block;
 	margin-left: 138px;
-	border: 1px solid #5e5e5b;
-	box-shadow: 0px 2px 4px #51514e;
-	-moz-box-shadow: 0px 2px 4px #51514e;
-	-webkit-box-shadow: 0px 2px 4px #51514e;
+	border: 1px solid #444442;
+	box-shadow: 0px 1px 4px #5e5e5b;
+	-moz-box-shadow: 0px 1px 4px #5e5e5b;
+	-webkit-box-shadow: 0px 1px 4px #5e5e5b;
 }
 
 article section.meta {
@@ -71,8 +118,8 @@ article section.meta span.icon img {
 	height:  10px;
 }
 article section.meta a.permalink {
-	-webkit-transition: all .2s linear;
-	-moz-transition: all .2s linear;
+	-webkit-transition: color .2s linear;
+	-moz-transition: color .2s linear;
 	color: #cee00b;
 }
 article section.meta a.permalink:hover {
@@ -80,7 +127,6 @@ article section.meta a.permalink:hover {
 }
 
 article section.meta ul.tags {
-	list-style-type: none;
 	margin: 1em 0 0 0;
 }
 

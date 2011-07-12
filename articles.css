@@ -1,16 +1,38 @@
-section.content p {
+/* Text */
+article.text div.body {
+	padding: 0 15px;
+}
+article.text h2 {
+	padding: 8px 15px;
+	background-color: #F5F5F5;
+	color: #555555;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+article.text p {
 	margin-bottom: 1.3em;
 }
 
-
-
-
 /* Photo */
-article.photo div.caption {
-	padding: 1em;
+article.photo div.photo {
+	background-color: #EAEDCD;
+	margin-bottom: -4px;
+}
+article.photo p:first-child {
+	padding: 8px 15px;
+	font-size: 1.1em;
+	font-weight: bold;
+	background-color: #eaedcd;
+	margin-bottom: 1em;
+}
+article.photo p {
+	padding:  0 15px;
+	margin-bottom: 1.3em;
 }
 
 /* Quote */
-article.quote div.quote {
-	padding: 1em;
-}
+
+/* Chat */
+
+/* Video */
