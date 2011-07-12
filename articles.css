@@ -150,6 +150,13 @@ article.audio h2 {
 	font-size: 1.1em;
 	font-weight: bold;
 }
+article.audio h2 a {
+	color: #144680;
+	text-decoration: underline;
+}
+article.audio h2 a:hover {
+	color: #000000;
+}
 article.audio div.audio {
 	padding: 15px;
 }
