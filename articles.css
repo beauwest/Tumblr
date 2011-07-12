@@ -15,6 +15,16 @@ article.post blockquote {
 	font-style: italic;
 	border-left: 2px solid #DDD;
 }
+article.post section.content a {
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	color: #444444;
+	text-decoration: underline;
+}
+article.post section.content a:hover {
+	color: #00418d;
+	text-decoration: underline;
+}
 
 /* Text */
 article.text div.body {
