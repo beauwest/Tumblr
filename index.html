@@ -7,13 +7,18 @@
 		<meta name="author" content="Beau West">
 		<meta name="description" content="The weblog of a fellow named Beau.">
 		<link rel="stylesheet" href="base.css" type="text/css" media="screen" title="Screen">
+		<script src="https://ajax.googleapis.com/ajax/libs/mootools/1.3.2/mootools-yui-compressed.js" type="text/javascript"></script>
+		<script src="base.js" type="text/javascript"></script>
+		<script src="https://twitter.com/statuses/user_timeline/beaudesigns.json?count=1&callback=tweetBack" type="text/javascript"></script>
 	</head>
 	
 	<body id="west-gs" class="tumblr">
 		<div id="envelope">
 			<header>
 				<section id="twitter">
-					
+					<span class="bird"><img src="twitter.png"></span>
+					<span class="quote">&#147;</span><span class="recent" id="recent_tweet">&hellip;</span><span class="quote">&#148;</span>
+					<span class="follow"><a href="http://twitter.com/beaudesigns">Follow @beaudesigns</a></span>
 				</section>
 				<h1><a href="/" title="Beau West">Beau West</a></h1>
 			</header>
@@ -35,7 +40,7 @@
 					<h2>Title Box</h2>
 					<div class="body">
 						<p>This is a <em>cool</em> shot.</p>
-						<p>There are cooler things in life than seeing fries without your popcorn, but there are none worth being a cat about.</p>
+						<p>There are <a href="">cooler things</a> in life than seeing fries without your popcorn, but there are none worth being a cat about.</p>
 						<ol>
 							<li>Bird</li>
 							<li>McHale</li>

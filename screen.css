@@ -1,4 +1,4 @@
-
+ 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -64,7 +64,7 @@ em {
 div#envelope {
 	width: 780px;
 	margin: 0 auto;
-	padding-top: 2em;
+	padding-top: 1em;
 }
 
 header {
@@ -80,6 +80,46 @@ header h1 a {
 	background: transparent url('logo.png') no-repeat center top;
 	width: 497px;
 	height: 33px;
+}
+
+section#twitter {
+	width: 500px;
+	height: 20px;
+	margin: 0 auto 10px auto;
+	font-size: .8em;
+	color: #999999;
+	position: relative;
+	cursor: pointer;
+}
+section#twitter span.bird {
+	position: absolute;
+	top: 7px;
+	left: 90px;
+}
+section#twitter span.quote {
+	font-size: 2em;
+	color: #666666;
+}
+section#twitter span.recent {
+	position: relative;
+	top: -5px;
+	padding: 0 3px;
+	display: inline-block;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	max-width: 360px;
+}
+section#twitter span.follow {
+	float: right;
+}
+section#twitter span.follow a {
+	-webkit-transition: color .2s linear;
+	-moz-transition: color .2s linear;
+	color: #cee033;
+}
+section#twitter span.follow a:hover {
+	color: #f3f8ce;
 }
 
 article.post {
