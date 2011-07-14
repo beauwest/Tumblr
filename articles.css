@@ -208,3 +208,26 @@ article.video p:last-child {
 article.video p {
 	padding: 1.3em 15px 0 15px;
 }
+
+/* Text */
+article.answer div.body {
+	padding: 0 15px;
+}
+article.answer h2 {
+	padding: 8px 15px;
+	background-color: #E1ECED;
+	color: #325887;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+article.answer p {
+	margin-bottom: 1.3em;
+}
+article.answer div.body a {
+	color: #8e9f00;
+	text-decoration: none;
+}
+article.answer div.body a:hover {
+	text-decoration: underline;
+}
