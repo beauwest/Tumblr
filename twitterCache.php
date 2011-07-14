@@ -52,4 +52,5 @@ class TwitterCache
 
 }
 
+header("Content-type: application/x-javascript");
 new TwitterCache();
