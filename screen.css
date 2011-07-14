@@ -97,13 +97,13 @@ section#twitter span.bird {
 	left: 90px;
 }
 section#twitter span.quote {
+	position: absolute;
+	top: 3px;
 	font-size: 2em;
 	color: #666666;
 }
 section#twitter span.recent {
-	position: relative;
-	top: -5px;
-	padding: 0 3px;
+	padding: 0 3px 0 12px;
 	display: inline-block;
 	text-overflow: ellipsis;
 	overflow: hidden;
@@ -167,6 +167,7 @@ article section.meta a.permalink:hover {
 }
 
 article section.meta ul.tags {
+	list-style: none;
 	margin: 1em 0 0 0;
 }
 
