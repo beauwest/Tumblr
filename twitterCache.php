@@ -27,7 +27,8 @@ class TwitterCache
 			}
 		}
 		
-		echo file_get_contents($this->Options['Path']);
+		$Tweets = json_decode(file_get_contents($this->Options['Path']));
+		$this->SendTweetCallback($Tweets[0]->text);
 		
 	}
 	
@@ -43,6 +44,10 @@ class TwitterCache
 	
 	private function SaveTwitterUpdate($Update) {
 		file_put_contents($this->Options['Path'], $Update);
+	}
+	
+	private function SendTweetCallback($Tweet) {
+		echo 'tweetBack(' . json_encode($Tweet) . ');';
 	}
 
 }
