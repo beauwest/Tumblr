@@ -231,3 +231,16 @@ article.answer div.body a {
 article.answer div.body a:hover {
 	text-decoration: underline;
 }
+article.answer div.question {
+	padding: 4px 15px;
+	background-color: #f1f6f7;
+	color: #325887;
+	text-align: right;
+	font-size: .8em;
+}
+article.answer div.question a {
+	text-decoration: none;
+}
+article.answer div.question a:hover {
+	text-decoration: none;
+}
