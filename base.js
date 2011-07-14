@@ -1,18 +1,20 @@
 window.addEvent('domready', function() {
+	bindTwitterClick();
+});
+
+function tweetBack(tweet) {
+	window.addEvent('domready', function() {
+		twitterUpdate(tweet);
+	});
+}
+
+function bindTwitterClick() {
 	$('twitter').addEvent('click', function(event) {
 		var href = this.getElement('a').get('href');
 		if(href) {
 			window.location = href;
 		}
 	});
-});
-
-function tweetBack(JSON) {
-	if(typeOf(JSON) == 'array') {
-		window.addEvent('domready', function() {
-			twitterUpdate(JSON[0].text);
-		});
-	}
 }
 
 function twitterUpdate(tweet) {
