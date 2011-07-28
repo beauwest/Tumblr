@@ -22,7 +22,7 @@ article.post section.content a {
 	text-decoration: underline;
 }
 article.post section.content a:hover {
-	color: #00418d;
+	color: #00142c;
 	text-decoration: underline;
 }
 
@@ -31,7 +31,7 @@ article.text div.body {
 	padding: 0 15px;
 }
 article.text h2 {
-	padding: 8px 15px;
+	padding: 12px 15px;
 	background-color: #EDEDED;
 	color: #555555;
 	font-size: 1.1em;
@@ -58,7 +58,7 @@ article.photo div.photo {
 }
 article.photo p:first-child {
 	margin: 0;
-	padding: 8px 15px !important;
+	padding: 12px 15px !important;
 	font-size: 1.1em;
 	color: #888888;
 	background-color: #EAEDCD;
@@ -95,7 +95,7 @@ article.quote blockquote span.quote {
 	color: #999999;
 }
 article.quote div.source {
-	padding: 8px 15px;
+	padding: 12px 15px;
 	background-color: #EDEDED;
 	color: #555555;
 	text-align: right;
@@ -106,7 +106,7 @@ article.link div.body {
 	padding: 0 15px;
 }
 article.link div.link {
-	padding: 8px 15px;
+	padding: 12px 15px;
 	background-color: #E1ECED;
 	color: #555555;
 	font-size: 1.1em;
@@ -131,7 +131,7 @@ article.link p {
 
 /* Chat */
 article.chat h2 {
-	padding: 8px 15px;
+	padding: 12px 15px;
 	background-color: #EDE1E1;
 	color: #801414;
 	font-size: 1.1em;
@@ -162,7 +162,7 @@ article.chat ul.chat span.person_3 {
 
 /* Audio */
 article.audio h2 {
-	padding: 8px 15px;
+	padding: 12px 15px;
 	background-color: #E1ECED;
 	color: #144680;
 	font-size: 1.1em;
@@ -186,7 +186,7 @@ article.video div.video {
 }
 article.video p:first-child {
 	margin: 0;
-	padding: 8px 15px !important;
+	padding: 12px 15px !important;
 	font-size: 1.1em;
 	color: #888888;
 	background-color: #EAEDCD;
@@ -215,7 +215,7 @@ article.answer div.body {
 	padding: 0 15px;
 }
 article.answer h2 {
-	padding: 8px 15px;
+	padding: 12px 15px;
 	background-color: #E1ECED;
 	color: #325887;
 	font-size: 1.1em;

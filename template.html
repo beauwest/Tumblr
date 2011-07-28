@@ -92,7 +92,7 @@
 					{/block:Title}
 					<ul class="chat">
 						{block:Lines}
-						<li class="{Alt}"><span class="label person_{UserNumber}">{Name}</span>: {Line}</li>
+						<li class="{Alt}">{block:Label}<span class="label person_{UserNumber}">{Label}</span>{/block:Label} {Line}</li>
 						{/block:Lines}
 					</ul>
 			<!-- End chat article -->
@@ -139,5 +139,19 @@
 			{/block:PreviousPage}
 			</footer>
 		</div>
+
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://analytics.beaudesigns.net/" : "http://analytics.beaudesigns.net/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://analytics.beaudesigns.net/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+
 	</body>
 </html>
