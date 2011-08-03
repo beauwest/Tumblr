@@ -28,7 +28,7 @@ class TwitterCache
 		}
 		
 		$Tweets = json_decode(file_get_contents($this->Options['Path']));
-		if(!empty($Tweets[0])) {
+		if(is_array($Tweets)) {
 			$this->SendTweetCallback($Tweets[0]->text);
 		} else {
 			unlink($this->Options['Path']);
