@@ -43,7 +43,10 @@ class TwitterCache
 		curl_setopt($Handler, CURLOPT_RETURNTRANSFER, TRUE);
 		$Response = curl_exec($Handler);
 
-		$this->SaveTwitterUpdate($Response);
+		$ResponseObject = json_decode($Response);
+		if(is_array($ResponseObject)) {
+			$this->SaveTwitterUpdate($Response);
+		}
 	}
 	
 	private function SaveTwitterUpdate($Update) {
