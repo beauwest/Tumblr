@@ -9,8 +9,8 @@ article.post ol {
 	list-style: decimal inside;
 }
 article.post blockquote {
-	margin: 0 0 1.3em 1em;
-	padding-left: 1em;
+	margin: 1.3em 0 1.3em 2em;
+	padding: .5em 0 .5em 1em;
 	color:  #777777;
 	font-style: italic;
 	border-left: 2px solid #DDD;
@@ -25,9 +25,12 @@ article.post section.content a:hover {
 	color: #00142c;
 	text-decoration: underline;
 }
+article.post div.caption {
+	padding-bottom: 1.3em;
+}
 
 /* Text */
-article.text div.body {
+article.text div.caption {
 	padding: 0 15px;
 }
 article.text h2 {
@@ -37,17 +40,17 @@ article.text h2 {
 	font-size: 1.1em;
 	font-weight: bold;
 }
-article.text p:first-child {
+article.text div.caption > p:first-child {
 	margin-top: 1em;
 }
 article.text p {
 	margin-bottom: 1.3em;
 }
-article.text div.body a {
+article.text div.caption a {
 	color: #8e9f00;
 	text-decoration: none;
 }
-article.text div.body a:hover {
+article.text div.caption a:hover {
 	text-decoration: underline;
 }
 
@@ -56,29 +59,26 @@ article.photo div.photo {
 	background-color: #EAEDCD;
 	margin-bottom: -4px;
 }
-article.photo p:first-child {
+article.photo div.caption > p:first-child {
 	margin: 0;
 	padding: 12px 15px !important;
 	font-size: 1.1em;
 	color: #888888;
 	background-color: #EAEDCD;
 }
-article.photo p:first-child strong {
+article.photo div.caption > p:first-child strong {
 	color: #555555;
 }
-article.photo p:first-child a {
+article.photo div.caption > p:first-child a {
 	-webkit-transition: all .2s linear;
 	-moz-transition: all .2s linear;
 	color: #777777;
 	text-decoration: underline;
 }
-article.photo p:first-child a:hover {
+article.photo div.caption > p:first-child a:hover {
 	color: #444444;
 }
-article.photo p:last-child {
-	padding-bottom: 1.3em;
-}
-article.photo p {
+article.photo div.caption > p {
 	padding: 1.3em 15px 0 15px;
 }
 
@@ -102,7 +102,7 @@ article.quote div.source {
 }
 
 /* Link */
-article.link div.body {
+article.link div.caption {
 	padding: 0 15px;
 }
 article.link div.link {
@@ -184,7 +184,7 @@ article.video div.video {
 	background-color: #EAEDCD;
 	margin-bottom: -4px;
 }
-article.video p:first-child {
+article.video div.caption > p:first-child {
 	margin: 0;
 	padding: 12px 15px !important;
 	font-size: 1.1em;
@@ -194,24 +194,21 @@ article.video p:first-child {
 article.video p:first-child strong {
 	color: #555555;
 }
-article.video p:first-child a {
+article.video div.caption > p:first-child a {
 	-webkit-transition: all .2s linear;
 	-moz-transition: all .2s linear;
 	color: #777777;
 	text-decoration: underline;
 }
-article.video p:first-child a:hover {
+article.video div.caption > p:first-child a:hover {
 	color: #444444;
 }
-article.video p:last-child {
-	padding-bottom: 1.3em;
-}
-article.video p {
+article.video div.caption > p {
 	padding: 1.3em 15px 0 15px;
 }
 
 /* Answer */
-article.answer div.body {
+article.answer div.caption {
 	padding: 0 15px;
 }
 article.answer h2 {
@@ -225,11 +222,11 @@ article.answer h2 {
 article.answer p {
 	margin-bottom: 1.3em;
 }
-article.answer div.body a {
+article.answer div.caption a {
 	color: #8e9f00;
 	text-decoration: none;
 }
-article.answer div.body a:hover {
+article.answer div.caption a:hover {
 	text-decoration: underline;
 }
 article.answer div.question {
